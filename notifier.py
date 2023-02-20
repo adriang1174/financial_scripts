@@ -1,4 +1,6 @@
 import requests
+import os
+
 requests.post('https://api.mynotifier.app', {
     "apiKey": os.environ['MYNOTIFIER_API_KEY'],
     "message": "Our first notification!",
